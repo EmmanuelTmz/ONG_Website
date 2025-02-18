@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directorio de Personas</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to bottom, #213B84, #4D4D4D); /* Gradiente con los colores especificados */
+        color: #ffffff; /* Texto en blanco para buen contraste */
+    }
+
+    h1 {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Sombra para encabezados */
+        color: #E62580; /* Rosa vibrante para destacar */
+        margin-bottom: 30px;
+    }
+
+    /* Estilo de las tarjetas */
+    .card {
+        background: #ffffff; /* Fondo blanco para contraste con el gradiente */
+        border: 1px solid #213B84; /* Borde azul marino */
+        border-radius: 15px; /* Esquinas redondeadas */
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Sombra suave */
+        overflow: hidden; /* Oculta bordes de la imagen si sobresale */
+        transition: transform 0.3s, box-shadow 0.3s; /* Animación suave */
+    }
+
+    .card:hover {
+        transform: translateY(-10px); /* Efecto de elevación */
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); /* Sombra más intensa al pasar el cursor */
+        border-color: #E62580; /* Cambia el borde al rosa vibrante al pasar el cursor */
+    }
+
+    .card img {
+        object-fit: cover; /* Ajuste para que la imagen siempre se vea bien */
+        height: 500px; /* Altura uniforme para todas las imágenes */
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: #213B84; /* Azul marino para títulos */
+    }
+
+    .card-text {
+        color: #4D4D4D; /* Gris oscuro para descripciones */
+        font-size: 1rem;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .text-center {
+        margin-bottom: 20px;
+    }
+
+    /* Opcional: barra de navegación */
+    .navbar {
+        background-color: #213B84; /* Azul marino para la barra de navegación */
+    }
+
+    .navbar-brand img {
+        filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4)); /* Sombra para el logo */
+    }
+
+    .nav-link {
+        color: #ffffff !important; /* Blanco para enlaces de la barra */
+    }
+
+    .nav-link:hover {
+        color: #E62580 !important; /* Rosa vibrante al pasar el cursor */
+    }
+</style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                  <img src="img/logo-placeholder.png" alt="Logo" width="200" height="50">
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Directorio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="society.html">Ser socio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galery.html">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Donar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Directorio -->
+    <div class="container my-5">
+        <h1 class="text-center mb-4">MESA DIRECTIVA</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Persona 1 -->
+            <div class="col">
+                <div class="card">
+                    <img src="img/photo-placeholder.png" class="card-img-top" alt="Foto de Persona 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Nombre de la Persona 1</h5>
+                        <p class="card-text">Cargo 1</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Persona 2 -->
+            <div class="col">
+                <div class="card">
+                    <img src="img/photo-placeholder.png" class="card-img-top" alt="Foto de Persona 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Nombre de la Persona 2</h5>
+                        <p class="card-text">Cargo 2</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Persona 3 -->
+            <div class="col">
+                <div class="card">
+                    <img src="img/photo-placeholder.png" class="card-img-top" alt="Foto de Persona 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Nombre de la Persona 3</h5>
+                        <p class="card-text">Cargo 3</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4"></div>
+            <!-- Persona 4 -->
+            <div class="col">
+                <div class="card">
+                    <img src="img/photo-placeholder.png" class="card-img-top" alt="Foto de Persona 4">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Nombre de la Persona 4</h5>
+                        <p class="card-text">Cargo 4</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4"></div>
+            <div class="row row-cols-1 row-cols-md-3 g-4"></div>
+            <h1 class="text-center mb-4">FUNDADORES</h1>
+            <div class="row row-cols-1 row-cols-md-3 g-4"></div>
+            <!-- Persona 6 -->
+            <div class="col">
+                <div class="card">
+                    <img src="img/photo-placeholder.png" class="card-img-top" alt="Foto de Persona 6">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Nombre de Fundador 1</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Persona 7 -->
+            <div class="col">
+                <div class="card">
+                    <img src="img/photo-placeholder.png" class="card-img-top" alt="Foto de Persona 7">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Nombre de Fundador 2</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Persona 9 -->
+            <div class="col">
+                <div class="card">
+                    <img src="img/photo-placeholder.png" class="card-img-top" alt="Foto de Persona 9">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Nombre de Fundador 3</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Persona 10 -->
+            <div class="col">
+                <div class="card">
+                    <img src="img/photo-placeholder.png" class="card-img-top" alt="Foto de Persona 10">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Nombre de Fundador 4</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Persona 11 -->
+            <div class="col">
+                <div class="card">
+                    <img src="img/photo-placeholder.png" class="card-img-top" alt="Foto de Persona 11">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Nombre de Fundador 5</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Persona 12 -->
+            <div class="col">
+                <div class="card">
+                    <img src="img/photo-placeholder.png" class="card-img-top" alt="Foto de Persona 12">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Nombre de Fundador 6</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Persona 13 -->
+            <div class="col">
+                <div class="card">
+                    <img src="img/photo-placeholder.png" class="card-img-top" alt="Foto de Persona 13">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Nombre de Fundador 7</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="img/photo-placeholder.png" class="card-img-top" alt="Foto de Persona 14">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Nombre de Fundador 8</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4"></div>
+            <div class="row row-cols-1 row-cols-md-3 g-4"></div>
+            <h1 class="text-center mb-4">MIEMBROS ACTIVOS NO FUNDADORES</h1>
+            <div class="row row-cols-1 row-cols-md-3 g-4"></div>
+            
+            <!-- Persona 14 -->
+            <div class="col">
+                <div class="card">
+                    <img src="img/photo-placeholder.png" class="card-img-top" alt="Foto de Persona 14">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Nombre de Miembro Activo 1</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Persona 15 -->
+            <div class="col">
+                <div class="card">
+                    <img src="img/photo-placeholder.png" class="card-img-top" alt="Foto de Persona 15">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Nombre de Miembro Activo 2</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="img/photo-placeholder.png" class="card-img-top" alt="Foto de Persona 16">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Nombre de Miembro Activo 3</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="img/photo-placeholder.png" class="card-img-top" alt="Foto de Persona 17">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Nombre de Miembro Activo 4</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="img/photo-placeholder.png" class="card-img-top" alt="Foto de Persona 18">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Nombre de Miembro Activo 5</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="img/photo-placeholder.png" class="card-img-top" alt="Foto de Persona 19">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Nombre de Miembro Activo 6</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4"></div>
+            <h1 class="text-center mb-4">MIEMBROS HONORIFICOS</h1>
+            <div class="row row-cols-1 row-cols-md-3 g-4"></div>
+            <div class="col">
+                <div class="card">
+                    <img src="img/photo-placeholder.png" class="card-img-top" alt="Foto de Persona 20">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Nombre de Miembro Honorifico 1</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="img/photo-placeholder.png" class="card-img-top" alt="Foto de Persona 21">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Nombre de Miembro Honorifico 2</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
